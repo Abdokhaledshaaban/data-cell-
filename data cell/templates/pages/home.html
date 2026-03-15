@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="تعلم تحليل البيانات باستخدام Excel وPower BI وPower Query ومشاريع عملية خطوة بخطوة لتطوير مهاراتك.">
+  <meta name="keywords"
+    content="تحليل البيانات, Excel, Power BI, Power Query, ذكاء اصطناعي, علم البيانات, Access, منصة تعليمية, Pivot Table, PowerPoint">
+  <meta name="author" content="Khaled Shaaban">
+  <meta name="theme-color" content="#0d6efd">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://datacell.com/home.html">
+  <meta property="og:locale" content="ar_AR">
+
+  <meta property="og:url" content="https://datacell.com/home.html">
+  <meta property="og:site_name" content="Data Cell">
+  <meta property="og:title" content="Data Cell | تعلم تحليل البيانات">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://datacell.com/static/img/preview.png">
+  <meta property="og:image:alt" content="واجهة منصة Data Cell لتعلم تحليل البيانات">
+  <meta property="og:description"
+    content="تعلم تحليل البيانات باستخدام Excel وPower BI وPower Query ومشاريع عملية خطوة بخطوة.">
+
+  <meta name="twitter:title" content="Data Cell | تعلم تحليل البيانات">
+  <meta name="twitter:description"
+    content="تعلم تحليل البيانات باستخدام Excel وPower BI وPower Query ومشاريع عملية خطوة بخطوة.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://datacell.com/static/img/data-analysis-course.png">
+  <meta name="twitter:image:alt" content="مسار تعلم تحليل البيانات في Data Cell">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Data Cell",
+      "url": "https://datacell.com/home.html",
+      "logo": "https://datacell.com/static/img/apple-touch-icon.png",
+      "sameAs": [
+        "https://www.facebook.com/share/1FXn8WjE4s/",
+        "https://www.youtube.com/@khaledshaaban",
+        "https://chat.whatsapp.com/BG29xzeOdV8DOxjk9hb5Yo",
+        "https://t.me/onlineeducationkhaled"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Data Cell",
+      "url": "https://datacell.com/home.html",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://datacell.com/search/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <!-- icon -->
+  <link rel="icon" href="../../static/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="../../static/img/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="../../static/img/apple-touch-icon.png">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+
+  <!-- main css -->
+  <link rel="stylesheet" href="../../static/css/main.css">
+
+  <title>Data Cell</title>
+</head>
+
+<body>
+
+  <!-- start nav -->
+  <nav dir="ltr" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a href="home.html" class="navbar-brand">
+        <span>D</span>ata<span>C</span>ell
+      </a>
+
+      <div class="d-flex align-items-center ms-auto order-lg-2 gap-3">
+
+        <div class="login">
+          <a href="login.html" class="btn btn-primary login-btn">تسجيل دخول</a>
+        </div>
+
+        <!-- Theme Button -->
+        <button id="theme-switch" class="me-2">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-regular fa-lightbulb"></i>
+        </button>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+
+      <!-- Links Menu -->
+      <div dir="rtl" class="navbar-collapse justify-content-lg-center order-lg-1" id="links">
+        <button class="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul class="navbar-nav text-start text-lg-center gap-lg-2">
+
+          <li class="nav-item">
+            <a href="home.html" class="nav-link">الرئيسية</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../courses/courses.html" class="nav-link">جميع الكورسات</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">تواصل معنا</a>
+          </li>
+
+          <li class="nav-item"><a href="about.html" class="nav-link">من نحن</a></li>
+          <li class="nav-item drop-down">
+            <a href="javascript:void(0)" id="navbarDropdown" class="nav-link">المزيد <i
+                class="fa-solid fa-caret-down"></i></a>
+
+            <ul class="drop-down-list navbar-nav">
+              <li class="nav-item">
+                <a href="../projects/projects.html" class="nav-link">مشاريع</a>
+              </li>
+              <li class="nav-item">
+                <a href="../quizzes/quiz.html" class="nav-link">إختبارات</a>
+              </li>
+              <li class="nav-item">
+                <a href="../learning_path/learning_path.html" class="nav-link">مسار التعلم</a>
+              </li>
+              <li class="nav-item">
+                <a href="../blog/blog.html" class="nav-link">blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="../ai/ai_chat.html" class="nav-link">AI chat</a>
+              </li>
+              <li class="nav-item">
+                <a href="#faq" class="nav-link">FAQ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="login-mobile" style="display:none;">
+          <button class="btn btn-primary w-100">تسجيل دخول</button>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <button id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- end nav -->
+
+
+
+  <!-- start hero -->
+  <div class="hero d-flex align-items-center">
+    <div class="container gap-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <h1 class="display-5 fw-bold mb-4">مرحبا بكم في اكاديمية Data Cell</h1>
+          <p class="text-secondary fs-5 mb-3">أكاديمية Data Cell هي أكاديميه لتعليم كيفية
+            إدارة البيانات وتحليلها
+            وعرضها, ويوجد
+            العديد من المسارات واختبارات في مجالات متعددة وستتعلم
+            بداية من تخزين البيات وتحليلها وعرضها على العديد من
+            البرامج مثل: excel, power BI, power query. وهناك دورات لتعلم كل هذا. اذهب
+            الى <a href="../courses/courses.html">جميع الكورسات </a>او <a href="../learning_path/learning_path.html">
+              مسار تعلم تحليل البيانات
+            </a></p>
+
+          <a href="../courses/courses.html" class="btn btn-primary w-75">
+            إبدأ التعلم
+          </a>
+        </div>
+
+        <div class="col-lg-6 text-center mt-5 mt-lg-0 imgs-section">
+          <img src="../../static/img/hero.png" class="img-fluid hero-img" alt="hero image">
+
+          <div class="tool excel">
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+
+          <div class="tool powerbi">
+            <i class="fa-solid fa-chart-column"></i>
+          </div>
+
+          <div class="tool powerquery">
+            <i class="fa-solid fa-database"></i>
+          </div>
+
+          <div class="tool word">
+            <i class="fa-solid fa-file-word"></i>
+          </div>
+
+          <div class="tool powerpoint">
+            <i class="fa-solid fa-file-powerpoint"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-box text-center">
+        <input type="text" id="search-input" placeholder="إبحث في الكورسات ...">
+        <div id="search-results"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end hero -->
+
+  <div class="intro-section w-100 text-center mt-5">
+    <h2 class="mb-4">تعلم مع اكاديمية Data Cell</h2>
+    <p class="text-secondary">تعلم مسارات تعليمية مختلفة في Data Cell تجعلك محترفاً
+      في إدارة البيانات وتحليلها <br> عن
+      طريق الكورسات الغنية بالمعلومات ذات التجربة الرائعة</p>
+  </div>
+
+  <!-- start course -->
+
+  <div class="courses mt-5">
+    <div class="container">
+      <h2 class="text-center mb-5">الكورسات</h2>
+
+      <div class="row align-items-center" id="courses">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+
+          <div class="course-card">
+
+            <div class="img-container">
+              <img src="../../static/img/excel course.png" class="course-img" alt="Excel Course">
+              <span class="course-badge">Excel</span>
+            </div>
+
+            <div class="course-content">
+
+              <h5 class="course-title">Excel for Data Analysis</h5>
+
+              <p class="course-desc">
+                تعلم تحليل البيانات باستخدام Excel بداية من الأساسيات حتى
+                الاحتراف.
+              </p>
+
+              <div class="course-info">
+
+                <span>
+                  <i class="fa-solid fa-video"></i> 35 درس
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-clock"></i> 5 ساعات
+                </span>
+
+              </div>
+
+              <div class="course-footer">
+
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  4.8
+                </div>
+
+                <a href="../courses/courses.html#excel" class="course-btn">
+                  إبدأ التعلم
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <a href="../courses/courses.html" class="all-coursers col-lg-3 col-md-6 mb-4">
+          <h4>جميع الكورسات</h4>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- end course -->
+
+  <!-- start platform features -->
+  <section class="platform-features py-5">
+    <div class="container">
+      <div class="section-head text-center mb-5">
+        <h2>مميزات المنصة</h2>
+        <p>تجربة تعلم عملية وسريعة تساعدك تطبّق من أول أسبوع.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-tile">
+            <div class="feature-icon bg-1">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h5>تعلم سريع ومركز</h5>
+            <p>دروس قصيرة ومباشرة بدون حشو.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-tile">
+            <div class="feature-icon bg-2">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h5>تطبيق عملي فوري</h5>
+            <p>تمارين ومشاريع بعد كل جزء.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-tile">
+            <div class="feature-icon bg-3">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <h5>محتوى محدث باستمرار</h5>
+            <p>أدوات ومهارات مطلوبة في السوق.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-tile">
+            <div class="feature-icon bg-4">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h5>مستويات تناسب الجميع</h5>
+            <p>من مبتدئ لحد احتراف خطوة بخطوة.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-tile">
+            <div class="feature-icon bg-5">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <h5>محتوى عربي</h5>
+            <p>شرح بسيط باللغة العربية.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-tile">
+            <div class="feature-icon bg-6">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h5>دعم ومجتمع تعلّم</h5>
+            <p>توجيه مستمر ومشاركة الخبرات.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end platform features -->
+
+  <!-- start CTA-->
+
+  <section class="cta-section">
+
+    <div class="cta-shapes">
+      <i class="shape excel-CTA">X</i>
+      <i class="shape bi">BI</i>
+      <i class="shape pq">PQ</i>
+      <i class="shape chart">📊</i>
+    </div>
+
+    <div class="container text-center cta-content">
+
+      <h2>ابدأ رحلتك في تحليل البيانات</h2>
+
+      <p>
+        تعلم اكسيل, باور بي آي, باور كويري وتحليل البيانات مع مشاريع
+        حقيقية ودروس عملية. ابدأ رحلتك في تحليل البيانات
+        اليوم!
+      </p>
+
+      <div class="cta-buttons">
+
+        <a href="../courses/courses.html" class="btn btn-primary btn-lg">
+          تصفح الدورات
+        </a>
+
+        <a href="../learning_path/learning_path.html" class="btn btn-outline-light btn-lg">
+          مسار التعلم
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- end CTA-->
+
+  <!-- most courses -->
+
+  <div class="most-courses mt-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="mb-2">الكورسات الأكثر شيوعاً</h2>
+        <p class="text-secondary mb-0">اختيارات مركّزة تساعدك تبدأ بسرعة وتحقق
+          نتائج واضحة.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <article class="most-course-card">
+            <div class="most-course-media">
+              <img src="../../static/img/data analysis course.png" alt="Data Analysis Course">
+              <span class="badge bg-primary most-course-tag">الأكثر طلباً</span>
+            </div>
+
+            <div class="most-course-body">
+              <h3>Data Analysis Fundamentals</h3>
+              <p>ابدأ بأساسيات التحليل خطوة بخطوة مع تمارين عملية
+                ومشاريع قصيرة.</p>
+
+              <div class="most-course-meta">
+                <span><i class="fa-solid fa-video"></i> 22 درس</span>
+                <span><i class="fa-solid fa-clock"></i> 3 ساعات</span>
+                <span><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+
+              <a href="../courses/courses.html#data-analysis" class="most-course-btn">ابدأ الآن</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6">
+          <article class="most-course-card">
+            <div class="most-course-media">
+              <img src="../../static/img/power query.png" alt="Power Query Course">
+              <span class="badge bg-primary most-course-tag">مميز</span>
+            </div>
+
+            <div class="most-course-body">
+              <h3>Power Query Mastery</h3>
+              <p>تعلّم تنظيف وتحويل البيانات بذكاء واحتراف قبل بناء
+                التقارير.</p>
+
+              <div class="most-course-meta">
+                <span><i class="fa-solid fa-video"></i> 18 درس</span>
+                <span><i class="fa-solid fa-clock"></i> 2.5 ساعة</span>
+                <span><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+
+              <a href="../courses/courses.html#power-query" class="most-course-btn">ابدأ الآن</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- latest articles -->
+  <section class="latest-section latest-articles">
+    <div class="container">
+      <div class="section-head text-center mb-4">
+        <h2>أحدث المقالات</h2>
+        <p class="text-secondary mb-0">آخر 3 مقالات نزلت في المدونة.</p>
+      </div>
+
+      <div class="row g-4" id="homeLatestPosts">
+        <div class="col-12 text-center text-secondary py-4" id="homePostsLoading">
+          جاري تحميل المقالات...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- latest videos -->
+  <section class="latest-section latest-videos">
+    <div class="container">
+      <div class="section-head text-center mb-4">
+        <h2>أحدث الفيديوهات</h2>
+        <p class="text-secondary mb-0">آخر 3 فيديوهات نزلت على القناة.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <article class="post-card card h-100 video-card">
+            <div class="post-media">
+              <img src="../../static/img/hero.png" alt="فيديو عن Power BI" loading="lazy" decoding="async">
+              <span class="post-tag">Power BI</span>
+              <span class="video-play"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="post-body card-body">
+              <h5>مقدمة سريعة لـ Power BI للمبتدئين</h5>
+              <p>ابدأ من الصفر وتعرّف على الأساسيات في 10 دقائق.</p>
+              <div class="post-meta">
+                <span><i class="fa-solid fa-calendar"></i> 9 مارس 2026</span>
+                <span><i class="fa-solid fa-video"></i> 10 دقائق</span>
+              </div>
+              <a href="https://www.youtube.com/@khaledshaaban" class="post-btn" target="_blank"
+                rel="noopener noreferrer">شاهد الآن</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <article class="post-card card h-100 video-card">
+            <div class="post-media">
+              <img src="../../static/img/excel course.png" alt="فيديو عن Excel" loading="lazy" decoding="async">
+              <span class="post-tag">Excel</span>
+              <span class="video-play"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="post-body card-body">
+              <h5>أفضل اختصارات Excel تسرّع شغلك</h5>
+              <p>أهم الاختصارات اللي هتختصر وقتك جدًا.</p>
+              <div class="post-meta">
+                <span><i class="fa-solid fa-calendar"></i> 6 مارس 2026</span>
+                <span><i class="fa-solid fa-video"></i> 8 دقائق</span>
+              </div>
+              <a href="https://www.youtube.com/@khaledshaaban" class="post-btn" target="_blank"
+                rel="noopener noreferrer">شاهد الآن</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <article class="post-card card h-100 video-card">
+            <div class="post-media">
+              <img src="../../static/img/power query.png" alt="فيديو عن Power Query" loading="lazy" decoding="async">
+              <span class="post-tag">Power Query</span>
+              <span class="video-play"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="post-body card-body">
+              <h5>تنظيف البيانات باستخدام Power Query</h5>
+              <p>خطوات عملية لتنظيف البيانات بسرعة.</p>
+              <div class="post-meta">
+                <span><i class="fa-solid fa-calendar"></i> 2 مارس 2026</span>
+                <span><i class="fa-solid fa-video"></i> 9 دقائق</span>
+              </div>
+              <a href="https://www.youtube.com/@khaledshaaban" class="post-btn" target="_blank"
+                rel="noopener noreferrer">شاهد الآن</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start FAQ -->
+  <section class="faq-section py-5" id="faq">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2>الأسئلة الشائعة</h2>
+        <p class="text-secondary mb-0">إجابات سريعة على أكثر الأسئلة تكرارًا.</p>
+      </div>
+
+      <div class="accordion faq-accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+              هل الدورات مناسبة للمبتدئين؟
+            </button>
+          </h2>
+          <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              نعم، كل المسارات تبدأ من الأساسيات وتزيد تدريجيًا حتى
+              الاحتراف.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+              هل المحتوى متاح بالعربي بالكامل؟
+            </button>
+          </h2>
+          <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              نعم، الشرح بالكامل باللغة العربية وبأسلوب بسيط وواضح.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+              هل يوجد شهادة بعد الإتمام؟
+            </button>
+          </h2>
+          <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              حاليًا لا يوجد شهادات، لكن التركيز الأساسي على التطبيق
+              العملي والمشاريع.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+              ما مدة كل دورة تقريبًا؟
+            </button>
+          </h2>
+          <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              المدة تختلف حسب المسار، لكن كل دورة مقسمة لدروس قصيرة
+              لسهولة المتابعة.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+              هل يمكنني الدراسة من الهاتف؟
+            </button>
+          </h2>
+          <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              نعم، المنصة متوافقة مع الموبايل ويمكنك التعلم من أي جهاز.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseSix" aria-expanded="false" aria-controls="faqCollapseSix">
+              هل يوجد واجبات أو مشاريع تطبيقية؟
+            </button>
+          </h2>
+          <div id="faqCollapseSix" class="accordion-collapse collapse" aria-labelledby="faqSix"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              نعم، يوجد تمارين ومشاريع عملية بعد كل جزء لتثبيت الفهم.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseSeven" aria-expanded="false" aria-controls="faqCollapseSeven">
+              هل الوصول للدورات مدى الحياة أم لفترة محددة؟
+            </button>
+          </h2>
+          <div id="faqCollapseSeven" class="accordion-collapse collapse" aria-labelledby="faqSeven"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              الوصول متاح طوال مدة الاشتراك في المنصة.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseEight" aria-expanded="false" aria-controls="faqCollapseEight">
+              هل يتم تحديث المحتوى باستمرار؟
+            </button>
+          </h2>
+          <div id="faqCollapseEight" class="accordion-collapse collapse" aria-labelledby="faqEight"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              نعم، يتم تحديث الدروس وإضافة أدوات جديدة حسب احتياج السوق.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseNine" aria-expanded="false" aria-controls="faqCollapseNine">
+              هل يوجد دعم أو مجتمع للتواصل؟
+            </button>
+          </h2>
+          <div id="faqCollapseNine" class="accordion-collapse collapse" aria-labelledby="faqNine"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              يوجد مجتمع للمتعلمين وإمكانية طرح الأسئلة داخل القنوات
+              المخصصة.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseTen" aria-expanded="false" aria-controls="faqCollapseTen">
+              هل يمكنني التواصل مع احد اعظاء الاكاديمية؟
+            </button>
+          </h2>
+          <div id="faqCollapseTen" class="accordion-collapse collapse" aria-labelledby="faqTen"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              نعم، يمكنك التواصل مع فريق الدعم أو المعلمين من خلال
+              القنوات المخصصة لذلك او ارسال ايميل وسيصلك الرد في
+              اقرب وقت ممكن.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseEleven" aria-expanded="false" aria-controls="faqCollapseEleven">
+              ما المتطلبات قبل البدء؟
+            </button>
+          </h2>
+          <div id="faqCollapseEleven" class="accordion-collapse collapse" aria-labelledby="faqEleven"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              لا توجد متطلبات معقدة، فقط جهاز واتصال بالإنترنت ورغبة في
+              التعلم.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faqCollapseTwelve" aria-expanded="false" aria-controls="faqCollapseTwelve">
+              هل يوجد لوحة متابعة للتقدم؟
+            </button>
+          </h2>
+          <div id="faqCollapseTwelve" class="accordion-collapse collapse" aria-labelledby="faqTwelve"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              حاليًا لا توجد لوحة متابعة، لكن يمكن متابعة الدروس يدويًا
+              بكل سهولة.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end FAQ -->
+
+  <!-- about section -->
+
+  <div class="about-section mt-5">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="mb-4">جميع التخصصات في إدارة البيانات</h2>
+          <p>تقدم اكاديمية Data Cell تخصصات كثيرة في إدارة البيانات يمكنك
+            زيارة الكورسات وتصفح ما تريد</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="content p-4">
+            <h3 class="mb-3">ما هي Data Cell؟</h3>
+            <p>
+              Data Cell هي أكاديمية تعليمية متخصصة في مجال تحليل البيانات
+              وإدارة البيانات. تأسست بهدف تمكين الأفراد من
+              اكتساب المهارات اللازمة لتحليل البيانات واستخلاص رؤى
+              قيمة منها. تقدم الأكاديمية مجموعة واسعة من الدورات
+              التدريبية التي تغطي مواضيع مثل Excel, Power BI, Power Query, وغيرها من
+              الأدوات والتقنيات
+              المستخدمة في مجال تحليل البيانات. تتميز دورات Data Cell بأسلوب
+              تعليمي عملي وتفاعلي، حيث يتم تقديم المحتوى
+              من خلال دروس فيديو، تمارين عملية، ومشاريع تطبيقية تساعد
+              المتعلمين على تطبيق ما تعلموه في سيناريوهات
+              واقعية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start footer -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <!-- Logo + description -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <h3 class="footer-logo">Data Cell</h3>
+
+          <p class="footer-text">
+            تعلم اكسيل, باور بي آي, باور كويري وتحليل البيانات مع مشاريع
+            حقيقية ودروس عملية. ابدأ رحلتك في تحليل
+            البيانات اليوم!
+          </p>
+
+          <div class="social-icons">
+
+            <a href="https://www.facebook.com/share/1FXn8WjE4s/" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@khaledshaaban" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://chat.whatsapp.com/BG29xzeOdV8DOxjk9hb5Yo" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://t.me/onlineeducationkhaled"><i class="fa-brands fa-telegram" target="_blank"></i></a>
+
+          </div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="col-lg-2 col-md-6">
+          <h5>اللينكات</h5>
+          <ul class="footer-links">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="../courses/courses.html">الدورات</a></li>
+            <li><a href="../learning_path/learning_path.html">مسار التعلم</a></li>
+            <li><a href="../blog/blog.html">المدونة</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <!-- Courses -->
+        <div class="col-lg-3 col-md-6">
+          <h5>الكورسات</h5>
+          <ul class="footer-links">
+            <li><a href="../courses/courses.html#excel">Excel</a></li>
+            <li><a href="../courses/courses.html#power-bi">Power BI</a></li>
+            <li><a href="../courses/courses.html#power-query">Power Query</a></li>
+            <li><a href="../courses/courses.html#data-analysis">Data Analysis</a></li>
+            <li><a href="../courses/courses.html#pivot-table">Pivot table</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5>تواصل معنا</h5>
+          <ul class="footer-contact">
+            <li>الايميل : <a href="mailto:info@datacell.com">info@datacell.com</a></li>
+            <li>الموقع : مصر</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom text-center">
+        <p>
+          جميع الحقوق محفوظة. تصميم وتطوير © 2026 Data Cell.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer -->
+
+  <!-- bootstrap js -->
+  <script src="../../static/js/bootstrap.bundle.min.js"></script>
+  <!-- main js -->
+  <script src="../../static/js/main.js"></script>
+</body>
+
+</html>

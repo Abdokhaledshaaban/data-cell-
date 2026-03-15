@@ -1,0 +1,258 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="{% block meta_description %}تعلم تحليل البيانات باستخدام Excel وPower BI وPower Query ومشاريع عملية خطوة بخطوة لتطوير مهاراتك.{% endblock %}">
+  <meta name="keywords"
+    content="{% block meta_keywords %}تحليل البيانات, Excel, Power BI, Power Query, ذكاء اصطناعي, علم البيانات, Access, منصة تعليمية, Pivot Table, PowerPoint{% endblock %}">
+  <meta name="author" content="Khaled Shaaban">
+  <meta name="theme-color" content="#0d6efd">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="{% block canonical_url %}https://datacell.com/{% endblock %}">
+
+  <meta property="og:locale" content="{% block og_locale %}ar_AR{% endblock %}">
+  <meta property="og:url" content="{% block og_url %}https://datacell.com/{% endblock %}">
+  <meta property="og:site_name" content="{% block og_site_name %}Data Cell{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}Data Cell | تعلم تحليل البيانات{% endblock %}">
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+  <meta property="og:image" content="{% block og_image %}https://datacell.com/static/img/preview.png{% endblock %}">
+  <meta property="og:image:alt"
+    content="{% block og_image_alt %}واجهة منصة Data Cell لتعلم تحليل البيانات{% endblock %}">
+  <meta property="og:description"
+    content="{% block og_description %}تعلم تحليل البيانات باستخدام Excel وPower BI وPower Query ومشاريع عملية خطوة بخطوة لتطوير مهاراتك.{% endblock %}">
+
+  <meta name="twitter:title" content="{% block twitter_title %}Data Cell | تعلم تحليل البيانات{% endblock %}">
+  <meta name="twitter:description"
+    content="{% block twitter_description %}تعلم تحليل البيانات باستخدام Excel وPower BI وPower Query ومشاريع عملية خطوة بخطوة لتطوير مهاراتك.{% endblock %}">
+  <meta name="twitter:card" content="{% block twitter_card %}summary_large_image{% endblock %}">
+  <meta name="twitter:image"
+    content="{% block twitter_image %}https://datacell.com/static/img/data-analysis-course.png{% endblock %}">
+  <meta name="twitter:image:alt"
+    content="{% block twitter_image_alt %}مسارات Data Cell لتعلم تحليل البيانات{% endblock %}">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Data Cell",
+      "url": "https://datacell.com/",
+      "logo": "https://datacell.com/static/img/apple-touch-icon.png",
+      "sameAs": [
+        "https://www.facebook.com/share/1FXn8WjE4s/",
+        "https://www.youtube.com/@khaledshaaban",
+        "https://chat.whatsapp.com/BG29xzeOdV8DOxjk9hb5Yo",
+        "https://t.me/onlineeducationkhaled"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Data Cell",
+      "url": "https://datacell.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://datacell.com/search/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <!-- icon -->
+  <link rel="icon" href="{% static 'img/favicon-32.png' %}" sizes="32x32" type="image/png">
+  <link rel="icon" href="{% static 'img/favicon-16.png' %}" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+  <!-- main css -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+  <title>{% block title %}Data Cell | تعلم تحليل البيانات{% endblock %}</title>
+  {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+
+  <!-- start nav -->
+  <nav dir="ltr" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a href="home.html" class="navbar-brand">
+        <span>D</span>ata<span>C</span>ell
+      </a>
+
+      <div class="d-flex align-items-center ms-auto order-lg-2 gap-3">
+
+        <div class="login">
+          <button class="btn btn-primary login-btn">طھط³ط¬ظٹظ„ ط¯ط®ظˆظ„</button>
+        </div>
+
+        <!-- Theme Button -->
+        <button id="theme-switch" class="me-2" aria-label="طھط¨ط¯ظٹظ„ ط§ظ„ط«ظٹظ…">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-regular fa-lightbulb"></i>
+        </button>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" aria-label="ظپطھط­ ط§ظ„ظ‚ط§ط¦ظ…ط©">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+      <!-- Links Menu -->
+      <div dir="rtl" class="navbar-collapse justify-content-lg-center order-lg-1" id="links">
+        <button class="nav-close" aria-label="ط¥ط؛ظ„ط§ظ‚ ط§ظ„ظ‚ط§ط¦ظ…ط©">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul class="navbar-nav text-start text-lg-center gap-lg-2">
+
+          <li class="nav-item">
+            <a href="home.html" class="nav-link">ط§ظ„ط±ط¦ظٹط³ظٹط©</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../courses/courses.html" class="nav-link">ط¬ظ…ظٹط¹ ط§ظ„ظƒظˆط±ط³ط§طھ</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">طھظˆط§طµظ„ ظ…ط¹ظ†ط§</a>
+          </li>
+
+          <li class="nav-item"><a href="about.html" class="nav-link">ظ…ظ† ظ†ط­ظ†</a></li>
+          <li class="nav-item drop-down">
+            <a href="javascript:void(0)" id="navbarDropdown" class="nav-link">ط§ظ„ظ…ط²ظٹط¯ <i
+                class="fa-solid fa-caret-down"></i></a>
+
+            <ul class="drop-down-list navbar-nav">
+              <li class="nav-item">
+                <a href="../projects/projects.html" class="nav-link">ظ…ط´ط§ط±ظٹط¹</a>
+              </li>
+              <li class="nav-item">
+                <a href="../quizzes/quiz.html" class="nav-link">ط§ط®طھط¨ط§ط±ط§طھ</a>
+              </li>
+              <li class="nav-item">
+                <a href="../learning_path/learning_path.html" class="nav-link">ظ…ط³ط§ط± ط§ظ„طھط¹ظ„ظ…</a>
+              </li>
+              <li class="nav-item">
+                <a href="../blog/blog.html" class="nav-link">ط§ظ„ظ…ط¯ظˆظ†ط©</a>
+              </li>
+              <li class="nav-item">
+                <a href="../ai/ai_chat.html" class="nav-link">AI chat</a>
+              </li>
+              <li class="nav-item">
+                <a href="home.html#faq" class="nav-link">FAQ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="login-mobile" style="display:none;">
+          <button class="btn btn-primary w-100">طھط³ط¬ظٹظ„ ط¯ط®ظˆظ„</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- end nav -->
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- start footer -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <!-- Logo + description -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <h3 class="footer-logo">Data Cell</h3>
+
+          <p class="footer-text">
+            طھط¹ظ„ظ… ط¥ظƒط³ظٹظ„طŒ ط¨ط§ظˆط± ط¨ظٹ ط¢ظٹطŒ ط¨ط§ظˆط± ظƒظˆظٹط±ظٹ ظˆطھط­ظ„ظٹظ„ ط§ظ„ط¨ظٹط§ظ†ط§طھ ظ…ط¹ ظ…ط´ط§ط±ظٹط¹ ط­ظ‚ظٹظ‚ظٹط© ظˆط¯ط±ظˆط³ ط¹ظ…ظ„ظٹط©. ط§ط¨ط¯ط£ ط±ط­ظ„طھظƒ ظپظٹ طھط­ظ„ظٹظ„
+            ط§ظ„ط¨ظٹط§ظ†ط§طھ ط§ظ„ظٹظˆظ…!
+          </p>
+
+          <div class="social-icons">
+
+            <a href="https://www.facebook.com/share/1FXn8WjE4s/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@khaledshaaban"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://chat.whatsapp.com/BG29xzeOdV8DOxjk9hb5Yo"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://t.me/onlineeducationkhaled"><i class="fa-brands fa-telegram"></i></a>
+
+          </div>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="col-lg-2 col-md-6">
+          <h5>ط§ظ„ظ„ظٹظ†ظƒط§طھ</h5>
+          <ul class="footer-links">
+            <li><a href="home.html">ط§ظ„ط±ط¦ظٹط³ظٹط©</a></li>
+            <li><a href="../courses/courses.html">ط§ظ„ط¯ظˆط±ط§طھ</a></li>
+            <li><a href="../learning_path/learning_path.html">ظ…ط³ط§ط± ط§ظ„طھط¹ظ„ظ…</a></li>
+            <li><a href="../blog/blog.html">ط§ظ„ظ…ط¯ظˆظ†ط©</a></li>
+            <li><a href="contact.html">ط§طھطµظ„ ط¨ظ†ط§</a></li>
+          </ul>
+        </div>
+        <!-- Courses -->
+        <div class="col-lg-3 col-md-6">
+          <h5>ط§ظ„ظƒظˆط±ط³ط§طھ</h5>
+          <ul class="footer-links">
+            <li><a href="../courses/courses.html#excel">Excel</a></li>
+            <li><a href="../courses/courses.html#power-bi">Power BI</a></li>
+            <li><a href="../courses/courses.html#power-query">Power Query</a></li>
+            <li><a href="../courses/courses.html#data-analysis">Data Analysis</a></li>
+            <li><a href="../courses/courses.html#pivot-table">Pivot table</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5>طھظˆط§طµظ„ ظ…ط¹ظ†ط§</h5>
+          <ul class="footer-contact">
+            <li>ط§ظ„ط§ظٹظ…ظٹظ„ : <a href="mailto:info@datacell.com">info@datacell.com</a></li>
+            <li>ط§ظ„ظ…ظˆظ‚ط¹ : ظ…طµط±</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom text-center">
+        <p>
+          ط¬ظ…ظٹط¹ ط§ظ„ط­ظ‚ظˆظ‚ ظ…ط­ظپظˆط¸ط©. طھطµظ…ظٹظ… ظˆطھط·ظˆظٹط± آ© 2026 Data Cell.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer -->
+
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <!-- main js -->
+  <script src="{% static 'js/main.js' %}"></script>
+  {% block extra_js %}{% endblock %}
+</body>
+
+</html>
+

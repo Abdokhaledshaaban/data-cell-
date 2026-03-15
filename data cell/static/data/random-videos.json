@@ -1,0 +1,116 @@
+[
+  {
+    "title": "اهم 20 اختصار في Excel",
+    "desc": "تعرف على أهم 20 اختصار في Excel لزيادة إنتاجيتك.",
+    "thumbnail": "https://i9.ytimg.com/vi/aLZr826nf_k/mqdefault.jpg?v=69aed7f2&sqp=COzJ180G&rs=AOn4CLAsnbG6XwNQe8yDzNgAgzb60kvLlw",
+    "video": "https://www.youtube.com/embed/aLZr826nf_k"
+  },
+  {
+    "title": "إنشاء شريط جانبي في الاكسيل",
+    "desc": "تعلم كيفية إنشاء شريط جانبي في Excel باستخدام VBA لعرض معلومات إضافية أو أدوات.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/e4l2_wyBugs/mqdefault.webp?v=69a43ee4&sqp=CPTX180G&rs=AOn4CLAKmWW1sU0SxiYl0WIWoBQyOXye2g",
+    "video": "https://www.youtube.com/embed/e4l2_wyBugs"
+  },
+  {
+    "title": "استخدام الدالة filter في Excel",
+    "desc": "تعرف على كيفية استخدام الدالة filter في Excel لتصفية البيانات بسهولة.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/THHN7V6JM2U/mqdefault.webp?v=69b410e0&sqp=COzJ180G&rs=AOn4CLBmvCvZUzGMIT7A2i641v6kcL1eHQ",
+    "video": "https://www.youtube.com/embed/THHN7V6JM2U"
+  },
+  {
+    "title": "استخدام الدالة groupBy",
+    "desc": "كيفية استخدام الدالة groupBy في Excel لتنظيم البيانات بسهولة.",
+    "thumbnail": "https://i9.ytimg.com/vi/GD_Dc7oyriI/mqdefault.jpg?v=699f2be1&sqp=COzJ180G&rs=AOn4CLCUuAI_yBqdU8dWjwBFo2iTxtyg5g",
+    "video": "https://www.youtube.com/embed/GD_Dc7oyriI"
+  },
+  {
+    "title": "شيتات غير محدوده",
+    "desc": "تعرف على كيفية إنشاء شيتات غير محدودة في Excel.",
+    "thumbnail": "https://i9.ytimg.com/vi/xBdaaBffhWY/mqdefault.jpg?v=699c8299&sqp=COzJ180G&rs=AOn4CLCqpw2fvUb89i1ZGcX54EaVakE_Cg",
+    "video": "https://www.youtube.com/embed/xBdaaBffhWY"
+  },
+  {
+    "title": "اخطاء شائعة في Excel",
+    "desc": "تعرف على أهم الأخطاء الشائعة في Excel وكيفية إصلاحها.",
+    "thumbnail": "https://i9.ytimg.com/vi/SARo_PxjOKk/mqdefault.jpg?v=699caffc&sqp=COzJ180G&rs=AOn4CLAgV7N7yanEIlA1P2w1JY0WnW_tzw",
+    "video": "https://www.youtube.com/embed/SARo_PxjOKk"
+  },
+  {
+    "title": "استخدام الدالة DATEDIF",
+    "desc": "تعرف على كيفية استخدام الدالة DATEDIF في Excel لحساب الفروق بين التواريخ.",
+    "thumbnail": "https://i9.ytimg.com/vi/NpEgb5LlKGs/mqdefault.jpg?v=696a51e0&sqp=COzJ180G&rs=AOn4CLCcxiM8jIGNi-bXRfNU2ZssEdWpUw",
+    "video": "https://www.youtube.com/embed/NpEgb5LlKGs"
+  },
+  {
+    "title": "ازاي تكون محلل بيانات شاطر",
+    "desc": "تعرف على كيفية becoming a successful data analyst.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/q53RAD9v1gc/mqdefault.webp?v=68e632a1&sqp=CKTh180G&rs=AOn4CLDCHaPHV5rhMLPZ9ug0YjKkbnCS1g",
+    "video": "https://www.youtube.com/embed/q53RAD9v1gc"
+  },
+  {
+    "title": "تحويل ملف Excel إلى PDF",
+    "desc": "تعرف على كيفية تحويل ملف Excel إلى PDF باستخدام Excel.",
+    "thumbnail": "https://i9.ytimg.com/vi/t--aQ4jtR5c/mqdefault.jpg?v=68a9c299&sqp=CKTh180G&rs=AOn4CLAPtKGlMvPgTYtFJSZN-bJ1d_aVzA",
+    "video": "https://www.youtube.com/embed/t--aQ4jtR5c"
+  },
+  {
+    "title": "استخدام الدالة HSTACK",
+    "desc": "تعرف على كيفية استخدام الدالة HSTACK في Excel لدمج البيانات أفقياً.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/_UQsQkO1RBc/mqdefault.webp?v=68829cb1&sqp=CKTh180G&rs=AOn4CLDHGAT5nrDYJooAluxVp8m-SvgWCw",
+    "video": "https://www.youtube.com/embed/_UQsQkO1RBc"
+  },
+  {
+    "title": "استخدام الدالة VSTACK",
+    "desc": "تعرف على كيفية استخدام الدالة VSTACK في Excel لدمج البيانات عمودياً.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/RCGpzSpvzh4/mqdefault.webp?v=68829bef&sqp=CIDt180G&rs=AOn4CLB3bv50eblwTBonfcU8KHe6H9FJkQ",
+    "video": "https://www.youtube.com/embed/RCGpzSpvzh4"
+  },
+  {
+    "title": "تتبع الحضور والانصراف",
+    "desc": "تعرف على كيفية تتبع الحضور والانصراف في Excel باستخدام VBA.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/ot5WDY0qFoU/mqdefault.webp?v=6864463e&sqp=CIDt180G&rs=AOn4CLC5ej81B8IYvnQBeilIdRx1szHoVw",
+    "video": "https://www.youtube.com/embed/ot5WDY0qFoU"
+  },
+  {
+    "title": "ارسال رساله واتس من الاكسيل",
+    "desc": "تعرف على كيفية إرسال رسالة واتس من خلال Excel باستخدام VBA.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/LFEzyw-TFio/mqdefault.webp?v=68613d47&sqp=CIDt180G&rs=AOn4CLB277pr9LfYNcJJDRUJAi5d_ZAGTQ",
+    "video": "https://www.youtube.com/embed/LFEzyw-TFio"
+  },
+  {
+    "title": "استخدام CHAT-GPT في Excel",
+    "desc": "تعرف على كيفية استخدام CHAT-GPT في Excel لتحسين تجربة المستخدم وزيادة الإنتاجية.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/5TbbVhJdjFc/mqdefault.webp?v=68498620&sqp=CIDt180G&rs=AOn4CLDQo1xr8N7qF9I529KG5ustIRuWfQ",
+    "video": "https://www.youtube.com/embed/5TbbVhJdjFc"
+  },
+  {
+    "title": "حساب المتوسط في Excel",
+    "desc": "تعرف على كيفية استخدام الدالة AVERAGE في Excel لحساب المتوسط.",
+    "thumbnail": "https://i9.ytimg.com/vi/k3QhaXGHppM/mqdefault.jpg?v=6859800f&sqp=CIDt180G&rs=AOn4CLDwC_0gmf_j6ipuVJim6G9HgAfT4g",
+    "video": "https://www.youtube.com/embed/k3QhaXGHppM"
+  },
+  {
+    "title": "اهم 10 نصائح في الاكسيل",
+    "desc": "تعرف على أهم 10 نصائح في Excel لزيادة إنتاجيتك وتحسين مهاراتك.",
+    "thumbnail": "https://i9.ytimg.com/vi/Jbxg1O2u7Ls/mqdefault.jpg?v=682c7b8d&sqp=CIDt180G&rs=AOn4CLDFaD7PXkEeyBGeCYgbDf4zUc2lqg",
+    "video": "https://www.youtube.com/embed/Jbxg1O2u7Ls"
+  },
+  {
+    "title": "اقوى تجميعة لدوال الاكسيل",
+    "desc": "تعرف على أقوى تجميعة لدوال Excel التي ستساعدك في تحسين مهاراتك وزيادة إنتاجيتك.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/YkdUMAPwN7I/mqdefault.webp?v=681ceb2c&sqp=CIDt180G&rs=AOn4CLA6hdCNURUGicyNQmhfgy21a5plHg",
+    "video": "https://www.youtube.com/embed/YkdUMAPwN7I"
+  },
+  {
+    "title": "اسرع طريقة لتنسيق الخلايا",
+    "desc": "تعرف على أسرع طريقة لتنسيق الخلايا في Excel باستخدام اختصارات لوحة المفاتيح.",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/DM-9StZXJtg/mqdefault.webp?v=6804ee77&sqp=CIDt180G&rs=AOn4CLBUY_owFlu8tLe3DbIFczYSw5TMqA",
+    "video": "https://www.youtube.com/embed/DM-9StZXJtg"
+  },
+  {
+    "title": "خدعة اضافة الصفوف والاعمدة",
+    "desc": "اسرع طريقة لاضافة الصفوف والاعمدة في برنامج الاكسيل",
+    "thumbnail": "https://i9.ytimg.com/vi_webp/jd34wuu-2aQ/mqdefault.webp?v=67fd4f09&sqp=CNjx180G&rs=AOn4CLD8J3oCrIcBoaDD2X-ooRMrOrDBjA",
+    "video": "https://www.youtube.com/embed/jd34wuu-2aQ"
+  }
+]
